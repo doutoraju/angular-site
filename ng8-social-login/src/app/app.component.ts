@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { GoogleLoginProvider, SocialUser, SocialAuthService } from 'angularx-social-login';
+import { AuthService, FacebookLoginProvider,GoogleLoginProvider, SocialUser } from 'angularx-social-login';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
   signinForm: FormGroup;
   user: SocialUser;
   loggedIn: boolean;  
-  constructor(private fb: FormBuilder, private authService: SocialAuthService) { }  
+  constructor(private fb: FormBuilder, private authService: AuthService) { }  
   ngOnInit() {
     this.signinForm = this.fb.group({
       email: ['', Validators.required],
@@ -21,6 +21,9 @@ export class AppComponent implements OnInit {
       console.log(this.user);
     });
   }  
+  signInWithFB(): void {
+    this.authService.signIn(FacebookLoginProvider.PROVIDER_ID);
+  }
   signInWithGoogle(): void {
     this.authService.signIn(GoogleLoginProvider.PROVIDER_ID);
   }

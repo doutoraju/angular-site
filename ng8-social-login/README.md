@@ -1,6 +1,6 @@
-# AdminApp
+# Ng8SocialLogin
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
 Using this component: 
 https://www.npmjs.com/package/angularx-social-login
 Angular 7 is using https://www.npmjs.com/package/angularx-social-login/v/1.2.7
