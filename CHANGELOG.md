@@ -13,6 +13,20 @@ http://schemaform.io
 -Customer CRUD
 -Template selection dynamic
 
+## [Notes]
+- Whatzbot project:
+www.whatzbot.com
+www.waoficial.com
+www.appwhatsbot.com
+www.whatz.me
+
+-Alphatecti.com.br:
+AI experts
+Easy conversation bots
+Integration experience
+Product creation
+Startup acceleration program
+
 ## [1.0.2] - 2019-08-16
 Dynamic form consuming service
 ## [1.0.1] - 2019-08-10
